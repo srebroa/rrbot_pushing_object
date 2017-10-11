@@ -24,6 +24,7 @@ The main script `rrbotsimstart.sh` runs four other scripts in separate terminals
 - `rrbot_pushing_object.sh`
 - `rrbot_camera_view.sh`
 
+The `rrbot_gazebo_launch.sh` start Gazebo with object models listed in the file `rrbot_object.world` : RR robotic arm, stationary objects like table and cardboard_box, camera (`roslaunch rrbot_gazebo rrbot_obstacle_world.launch`). 
 To load robotic arm controllers (ROS joint states controllers) we use the script `rrbot_ros_control.sh` that calls the command `roslaunch rrbot_control rrbot_control.launch`.
 
 # Video Demo
