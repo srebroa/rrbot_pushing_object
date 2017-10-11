@@ -18,6 +18,13 @@ Once the `rrbot_pushing_object` package has been built, you can launch the simul
 $ cd ~/catkin_ws/src/rrbot_pushing_object/rrbot_pushing_object_basic
 $ bash rrbotsimstart.sh
 ```
+The main script `rrbotsimstart.sh` runs four other scripts in separate terminals:
+- `rrbot_gazebo_launch.sh`
+- `rrbot_ros_control.sh`
+- `rrbot_pushing_object.sh`
+- `rrbot_camera_view.sh`
+
+To load robotic arm controllers (ROS joint states controllers) we use the script `rrbot_ros_control.sh` that calls the command `roslaunch rrbot_control rrbot_control.launch`.
 
 # Video Demo
 
